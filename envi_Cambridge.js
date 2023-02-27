@@ -34,7 +34,7 @@ class enen_Cambridge {
                 return node.innerText.trim();
         }
 
-        let base = 'https://dictionary.cambridge.org/dictionary/english-vietnamese/';
+        let base = 'https://dictionary.cambridge.org/search/english-vietnamese/direct/?q=';
         let url = base + encodeURIComponent(word);
         let doc = '';
         try {
