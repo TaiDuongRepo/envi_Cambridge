@@ -1,5 +1,5 @@
 /* global api */
-class enen_Cambridge {
+class envi_Cambridge {
     constructor(options) {
         this.options = options;
         this.maxexample = 2;
@@ -90,7 +90,7 @@ class enen_Cambridge {
                         if (!eng_tran) continue;
                         let definition = '';
                         eng_tran = `<span class='eng_tran'>${eng_tran.replace(RegExp(expression, 'gi'),`<b>${expression}</b>`)}</span>`;
-                        chn_tran = `<span class='chn_tran'>${chn_tran}</span>`;
+                        chn_tran = `<br><span class='chn_tran'>${chn_tran}</span>`;
                         let tran = `<span class='tran'>${eng_tran}${chn_tran}</span>`;
                         definition += phrasehead ? `${phrasehead}${tran}` : `${pos}${tran}`;
 
